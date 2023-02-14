@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="veiwport" content="width=device-width, initial-scale=1.0">
+    <title>Asbestos Awareness Feedback Form</title>
+    <link rel="stylesheet" href="styles.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+    <header class="header">
+      <h1 id="title">Omega Asbestos Training Feedback</h1>
+      <p id="description">Your chance to sing our praises &#128512;</p>
+    </header>
+      <form id="survey-form" method="post" action="https://training-feedback.omegaasbestos.org">
+      <fieldset>
+        <label id="name-label" for="name">Name <input id="name" name="name" type="text" placeholder="Enter your name" required></input></label>
+        <label id="email-label" for="email">Email <input id="email" name="email" type="email" placeholder="Enter your email" required></input></label>
+        <label id="number-label" for="number">Age (optional) <input id="number" name="number" type="number" min="1" max="99" placeholder="Age"></input></label>
+        <label id="company-label" for="company">Company <input id="company" name="company" type="text" placeholder="Company name here" required></input></label>  
+      </fieldset>
+      <fieldset>
+        <label id="recommend">Would you recommend us to other people? </label>
+        <label for="yes"><input id="yes" name="yn" type="radio" value="yes"></input> Yes</label>
+        <label for="no"><input id="no" name="yn" type="radio" value="no"></input> No</label>
+      </fieldset>
+      <fieldset>
+        <label id="enjoy-label" for="enjoy">What did you enjoy about the course? <textarea id="enjoy" name="enjoy" rows="6" cols="30" placeholder="I like the coffee and cake..."></textarea>
+        <label id="dislike-label" for="dislike">What didn't you like about the course? <textarea id="dislike" name="dislike" rows="6" cols="30" placeholder="Not enough coffee and cake..."></textarea>
+        <label id="dropdown-label" for="improve">What areas do you think we could improve? 
+          <select id="dropdown" name="improve" class="box">
+            <option value="">Select one</option>
+            <option value="1">Pre-course material</option>
+            <option value="2">Course content</option>
+            <option value="3">Length of course</option>
+            <option value="4">Refreshments</option>
+          </select>
+        </label> 
+      </fieldset>
+      <fieldset>
+        <label id="contact">Would you like any free future publications? </label>
+        <label id="newsletter-only-label" for="newsletter-only"><input type="checkbox" id="newsletter-only" value="newsletter-only">Newsletter only</input></label>
+        <label id="news-promo-label" for="news-promo"><input type="checkbox" id="news-promo" value="news-promo">Newsletter and promotional material</input></label>
+      </fieldset>
+      <input type="submit" id="submit" value="Submit" />
+      </form>
+      </div>
+  </body>
+</html>
