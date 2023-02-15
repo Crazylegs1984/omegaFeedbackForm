@@ -1,15 +1,22 @@
+@media (min-width: 480px) {
+  body {
+    background-attachment: scroll;
+    background-size: cover;
+  }
+}
+
 html {
   width: 100%;
-  height: 100vh;
   margin: 0;
+  height: 100vh;
+}
+
+body {
   background-image: url(https://cdn.pixabay.com/photo/2023/01/31/10/48/sunset-7757752_960_720.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-}
-
-body{
   color: #f59105;
   font-family: 'Lato', sans-serif;
   font-size: 1.5rem;
